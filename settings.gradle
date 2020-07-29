@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "SamsungAndroidBootcampRetrofit2022"
