@@ -8,6 +8,7 @@ import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.example.samsungandroidbootcampretrofit2022.R;
 import com.example.samsungandroidbootcampretrofit2022.databinding.ActivityMainBinding;
+import com.example.samsungandroidbootcampretrofit2022.model.CountryData;
 import com.example.samsungandroidbootcampretrofit2022.presenter.MainPresenter;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -24,6 +25,14 @@ public class MainActivity extends MvpAppCompatActivity implements IMainView {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.setPresenter(presenter);
 
+    }
+
+    @Override
+    public void loading() {
+    }
+
+    @Override
+    public void success(CountryData countryData) {
     }
 
     @Override
